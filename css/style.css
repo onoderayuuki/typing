@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "special_eliteregular";
+  src: url("SpecialElite-webfont.eot");
+  src: url("SpecialElite-webfont.eot?#iefix") format("embedded-opentype"),
+    /* url("SpecialElite-webfont.woff2") format("woff2"), */
+    url("SpecialElite-webfont.woff") format("woff"),
+    url("SpecialElite-webfont.ttf") format("truetype"),
+    url("SpecialElite-webfont.svg#special_eliteregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    background-color: cadetblue;
+    /* background-image: url(../img/ogasuta458A7873.jpg); */
+    /* background-size: cover; */
+    font-size: 50px;
+    color: #3F3F3F;
+}
+/*****************************
+    position
+***************************/
+.table-container{
+    position: relative;
+    /*width: 1200px; /*margin autoのために必要*/
+    height:1px;
+    /* margin: 0 auto; */
+}
+.table{
+    position: absolute;
+    top:400px;
+    /* left:20px; */
+}
+.container{
+    position: relative;
+    width: 1200px; /*margin autoのために必要*/
+    height:1px;
+    margin: 0 auto;
+}
+
+.paper {
+    position: absolute;
+    top:260px;
+    left:285px;
+}
+.img-wrapper {
+    position: absolute;
+    top:300px;
+    left:40px;
+}
+
+/*****************************
+    色形大きさ
+***************************/
+.back img {
+    width: 100%;
+}
+.table{
+    background-color: #B98F84;
+    height:510px;
+    width: 100%; 
+}
+
+.paper{
+    background-color: #F1F5D4;
+    width: 750px;
+    height:100px;
+    border: solid 2px #C1C1C1;
+    border-bottom: solid 1px #C1C1C1;
+    z-index: 999;
+}
+
+.textarea{
+    padding: 25px;
+    width:700px;
+    /* word-wrap: break-word; */
+}
+.text{
+    font-family: "special_eliteregular";
+    height: 50px;
+}
+.text.wait{
+    color: transparent;
+    /* font-family: none; */
+
+}
+#highlight {
+    padding: 2px;
+    /* color:#3F3F3F; */
+    font-family: none;
+    color: transparent;
+}
+.highlight-on{
+    background-color: #3F3F3F;
+}
+
+.img-wrapper{
+    width: 1200px;
+    height: 600px;
+}
+
+.img-wrapper >img {
+    width: 100%;
+    height: 100%;
+}
+
+.lower::before{
+    content:" ";
+    position: absolute;
+    top:-10px;
+    left:0;
+    width:100%;
+    height:10px;
+    background: linear-gradient(45deg, #F1F5D4 50%,rgba(0 0 0 / 0)50%),   linear-gradient(315deg, #F1F5D4 50%, rgba(0 0 0 / 0) 50%);
+    background-size: 20px 20px;
+  }

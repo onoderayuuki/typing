@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/icon-192x192.png">
+</head>
+<body>
+    <audio src ="SE/type.mp3" id="type_audio"></audio>
+    <audio src ="SE/missing.mp3" id="miss_audio"></audio>
+
+    <audio src ="SE/電子レンジを閉める.mp3" id="down_audio"></audio>
+    <audio src ="SE/カッターの刃を出す*3.mp3" id="moveleft_long_audio"></audio>
+    <audio src ="SE/カッターの刃を出す*2.mp3" id="moveleft_middle_audio"></audio>
+    <audio src ="SE/カッターの刃を出す.mp3" id="moveleft_short_audio"></audio>
+    <audio src ="SE/電子レンジでチン.mp3" id="chime_audio"></audio>
+    <audio src ="SE/紙を破く2.mp3" id="tear_audio"></audio>
+
+    <div class="table-container">
+        <div class="back"><img src="img/ogasuta458A7873.jpg" alt=""></div>
+        <div class="table"></div>
+    </div>
+    <div class="container">
+    <div id="paper" class="paper lower">
+            <div id = "textarea" class="textarea">
+            <p class="text">
+                <span id="log"></span><span id="highlight" class="highlight-on">_</span>
+            </p>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <img src="img/typewrighter.png" alt="">
+    </div>
+</div>
+<!-- <a href="typing.html" id="reload">aaa</a> -->
+<script src="js/typing.js"></script>
+</body>
+</html>
