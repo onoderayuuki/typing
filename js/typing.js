@@ -34,7 +34,7 @@ window.onload = function () {
   //
   function judgKey(e) {
     let str = e.key;
-    if (str == "Escape") {
+    if (!waitFLG && str == "Escape") {
       //最初から
       addPaper();
       setTimeout(function () {
@@ -47,16 +47,14 @@ window.onload = function () {
       //window.location.reload();
       //   document.getElementById('reload').click();
       // window.location.href = 'js01/typing.html';
-    } else if (str == "Enter") {
+    } else if (!waitFLG && str == "Enter") {
       //改行キーが押されている場合
-      waitFLG = true;
-      enter();
-    } else if (waitFLG) {
-      //textareaが改行処理中の場合:何もなし
-    } else if (countString > 23 || str.length > 1 || arrayString.length > 2) {
-      //1行の行数を超えている場合
-      //印字関連でないキーを押下した場合=キー１つで複数文字を意味する場合
-      //早く打ちすぎの時
+          waitFLG = true;
+          enter();
+    } else if (waitFLG || countString > 23 || str.length > 1 || arrayString.length > 2) {
+        //1行の行数を超えている場合
+        //印字関連でないキーを押下した場合=キー１つで複数文字を意味する場合
+        //textareaが改行処理中の場合:何もなし
       miss_audio.play();
     } else {
       //印字できる場合
